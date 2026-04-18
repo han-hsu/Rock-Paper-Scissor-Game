@@ -25,7 +25,7 @@ function randomMove() {
     }
 
     // computerChoose.textContent = result;
-    computerChoose.innerHTML = `<img src="Pic/${result}.png" alt="">`
+    computerChoose.innerHTML = `<img src="./Pic/${result}.png" alt="">`
 
     return result; 
 }
@@ -66,7 +66,7 @@ function play(move) {
         result = 'please chose your move'
     }
 
-    yourChoose.innerHTML = `<img src="Pic/${move}.png" alt="">`
+    yourChoose.innerHTML = `<img src="./Pic/${move}.png" alt="">`
     
     if (result === 'you win') {
         score.win += 1
