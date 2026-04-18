@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rps-display.css">
+</head>
+<body>
+    <div class="main-frame">
+        
+        <p class="title">Choose One to play</p>
+
+        <div class="btn">
+            <button  onclick="play('rock')"><img src="Pic/rock.png" alt=""></button>
+            <button onclick="play('paper')"><img src="Pic/paper.png" alt=""></button>
+            <button onclick="play('scissor')"><img src="Pic/scissor.png" alt=""></button>
+        </div>
+
+
+        <div class="game-frame">
+            <p class="round">Round: <span id="round">0</span></p>
+
+            <div class="show-score">
+
+                <p>Win: <span id="win">0</span></p>
+
+                <p>Tie: <span id="tie">0</span> </p>
+
+                <p>Lose: <span id="lose">0</span></p>
+
+            </div>
+
+            <div class="player">
+                <p>You</p>
+
+                <p>Computer</p>
+            </div>
+
+            <div class="show-move">
+                <p id="you"></p>
+                <p class="vs">Vs</p>
+                <p id="computer"></p>
+            </div>
+
+            
+        </div>
+        <div class="restart-btn">
+            <button onclick="restartAll()">Restart</button>
+        </div>
+    </div>
+
+    <script src="rps-display.js"></script>
+</body>
+</html>

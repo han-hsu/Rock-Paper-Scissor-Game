@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: #FFE4EC; */
+    font-family: monospace;
+}
+
+.main-frame{   
+    padding: 15px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.game-frame{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 0;
+    box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.525);
+}
+
+.round{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    
+}
+
+.show-score, 
+.player,
+.show-move{
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.restart-btn{
+    justify-content: center;
+    display: flex;
+}
+.show-move{
+    height: 150px;
+    align-items: center;
+    background-color: yellow; 
+}
+
+#you,
+#computer{
+    max-width: 150px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn button{
+    border: none;
+    background-color: transparent;    
+}
+
+img{
+    width: 68px; 
+    height: 85px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.btn button:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+.btn button:active{
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.player{
+    background-color: orange;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0 -2px 8px rgba(128, 128, 128, 0.603);
+    color: white;
+}
+
+.show-score,
+.round{
+    background-color: lightblue;
+    font-size: 17px;
+}
+
+.show-score{
+    padding: 5px 0 18px 0;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    word-spacing: 5px;
+    letter-spacing: 3px;    
+}
+
+.vs{
+    font-style: italic;
+    color: rgb(70, 70, 70);
+}
+
+.restart-btn button{
+    width: 100px;
+    height: 45px;
+    background-color: #d8780d;
+    color: white;
+    border-radius: 32px;
+    letter-spacing: 1.8px;
+    border: solid 0.1px rgba(0, 0, 0, 0.193);
+    font-size: 14px;
+}
+
+.restart-btn button:hover{
+    background: #c46800;
+    transition: all 0.3s;
+}
+
+.restart-btn button:active{
+    background: #d8780d;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px){
+    img{
+        width: 65px; 
+        height: 88px;
+    }
+
+    .main-frame{   
+        padding: 5px;
+        max-width: 580px;
+        width: 90%;
+    }
+
+    .player{
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    .show-score,
+    .round{
+        font-size: 19px;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .vs{
+        font-size: 12px;
+    }
+
+    .restart-btn button{
+        width: 120px;
+        height: 48px;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 426px){
+    img{
+        width: 35px; 
+        height: 48px;
+    }
+
+    .main-frame{   
+        padding: 8px;
+        max-width: 240px;
+        width: 90%;
+    }
+
+    .player{
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .show-score,
+    .round{
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .vs,
+    .restart-btn button{
+        font-size: 10px;
+    }
+
+    .restart-btn button{
+        width: 80px;
+        height: 35px;
+    }
+    
+}
